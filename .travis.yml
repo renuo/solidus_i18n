@@ -21,3 +21,6 @@ env:
     - SOLIDUS_BRANCH=v2.6 DB=mysql
     - SOLIDUS_BRANCH=v2.7 DB=mysql
     - SOLIDUS_BRANCH=master DB=mysql
+script:
+  - bundle exec i18n-tasks check-normalized
+  - bundle exec rake
